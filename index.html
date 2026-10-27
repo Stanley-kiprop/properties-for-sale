@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore land and buildings for sale with Kapsoya Business Park. Contact us for property enquiries and viewings.">
+    <title>Kapsoya Business Park | Properties for Sale</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">
+            <span class="logo-icon">K</span>
+            <span>KAPSOYA <small>BUSINESS PARK</small></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <nav class="nav" id="nav">
+            <a href="#home">Home</a>
+            <a href="#properties">Properties</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="header-button">Enquire Now</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">PROPERTY. POTENTIAL. OPPORTUNITY.</span>
+                <h1>Find the Right Property for Your <span>Future.</span></h1>
+                <p>Discover land and buildings for sale with Kapsoya Business Park. Your next property opportunity starts here.</p>
+                <div class="hero-buttons">
+                    <a href="#properties" class="button button-gold">Explore Properties →</a>
+                    <a href="#contact" class="button button-outline">Contact Our Team</a>
+                </div>
+                <div class="hero-note">Land for sale <span>•</span> Buildings for sale <span>•</span> Property enquiries</div>
+            </div>
+        </section>
+
+        <section class="intro section" id="about">
+            <div>
+                <span class="eyebrow">WELCOME TO KAPSOYA</span>
+                <h2>Property opportunities, made easier.</h2>
+            </div>
+            <p>We help prospective buyers explore available land and buildings. Browse our listings and contact our team to learn more or arrange a viewing.</p>
+        </section>
+
+        <section class="properties section" id="properties">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">EXPLORE OUR LISTINGS</span>
+                    <h2>Featured Properties</h2>
+                    <p>Explore the available opportunities.</p>
+                </div>
+                <div class="filters">
+                    <select id="propertyFilter" aria-label="Filter by property type">
+                        <option value="all">All properties</option>
+                        <option value="land">Land</option>
+                        <option value="building">Buildings</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="property-grid" id="propertyGrid">
+                <article class="property-card" data-type="land">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" alt="Open green land">
+                    <div class="property-info">
+                        <span class="property-type">LAND FOR SALE</span>
+                        <h3>Prime Land Opportunity</h3>
+                        <p class="location">Location to be confirmed</p>
+                        <div class="property-details">
+                            <span>Plot size: To be confirmed</span>
+                            <strong>Price on enquiry</strong>
+                        </div>
+                        <a href="#contact" class="property-link" data-property="Prime Land Opportunity">Enquire About Property →</a>
+                    </div>
+                </article>
+
+                <article class="property-card" data-type="building">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Modern commercial building">
+                    <div class="property-info">
+                        <span class="property-type">BUILDING FOR SALE</span>
+                        <h3>Commercial Property</h3>
+                        <p class="location">Location to be confirmed</p>
+                        <div class="property-details">
+                            <span>Property details to be confirmed</span>
+                            <strong>Price on enquiry</strong>
+                        </div>
+                        <a href="#contact" class="property-link" data-property="Commercial Property">Enquire About Property →</a>
+                    </div>
+                </article>
+
+                <article class="property-card" data-type="building">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Modern residential property">
+                    <div class="property-info">
+                        <span class="property-type">BUILDING FOR SALE</span>
+                        <h3>Residential Property</h3>
+                        <p class="location">Location to be confirmed</p>
+                        <div class="property-details">
+                            <span>Property details to be confirmed</span>
+                            <strong>Price on enquiry</strong>
+                        </div>
+                        <a href="#contact" class="property-link" data-property="Residential Property">Enquire About Property →</a>
+                    </div>
+                </article>
+            </div>
+
+            <p class="listing-note">Sample listings for website development. Replace these with the client's actual properties before publishing.</p>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="contact-content">
+                <span class="eyebrow">LET'S TALK PROPERTY</span>
+                <h2>Found a property you're interested in?</h2>
+                <p>Contact Kapsoya Business Park to ask questions, request more details or arrange a viewing.</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="message">Your enquiry</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us which property interests you" required></textarea>
+
+                <button type="submit" class="button button-gold">Send Enquiry via WhatsApp</button>
+                <p class="form-note">Your enquiry will open in WhatsApp for you to send.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo footer-logo">
+            <span class="logo-icon">K</span>
+            <span>KAPSOYA <small>BUSINESS PARK</small></span>
+        </a>
+        <p>Discover your next property opportunity.</p>
+        <p class="copyright">© <span id="year"></span> Kapsoya Business Park. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
